@@ -11,3 +11,12 @@ sudo pip install -r requirements.txt
 cd ops &&\
 python setup.py develop
 ```
+
+```bash
+export CUDA_HOME=/usr/local/cuda &&\
+export PATH=$CUDA_HOME/bin:$PATH
+```
+
+```bash
+export TORCH_CUDA_ARCH_LIST="8.6"
+```
